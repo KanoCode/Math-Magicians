@@ -1,6 +1,5 @@
 import './calculator.css';
 import React from 'react';
-// import PropTypes from 'prop-types';
 import ButtonRow from './buttons-rows';
 
 class Calculator extends React.Component {
@@ -10,17 +9,17 @@ class Calculator extends React.Component {
   }
 
   render() {
-    // const { name } = this.props;
     return (
-      <>
-        <ButtonRow />
-      </>
+      <ul className="container">
+        <ButtonRow className="firstRow" />
+        <ButtonRow className="secondRow" />
+        <ButtonRow className="thirdRow" />
+        <ButtonRow className="fourthRow" />
+        <ButtonRow className="fifthRow" />
+        <ButtonRow className="last" />
+      </ul>
     );
   }
 }
-
-// Calculator.propTypes = {
-//   name: PropTypes.string.isRequired,
-// };
 
 export default Calculator;
