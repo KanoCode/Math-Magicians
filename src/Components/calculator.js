@@ -1,41 +1,39 @@
 import './calculator.css';
 import React from 'react';
 import Button from './Button';
+import calculate from './logic/calculate';
+// import operate from './logic/operate';
 
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      input: '0',
-      memory1: '5',
+      total: 0,
+      operation: null,
+      next: null,
     };
     this.updateCalc = this.updateCalc.bind(this);
   }
 
-  updateCalc(newVal) {
-    const { input, memory1 } = this.state;
-
-    // this.setState((state) => ({ input: `${state.input}${newVal}` }));
-    if (newVal === '') {
-      this.setState(() => ({ input: '0' }));
-    } else if (newVal === '-') {
-      this.setState((state) => ({ input: `-${state.input}` }));
-    } else if (typeof newVal === 'number') {
-      this.setState((state) => ({ input: parseInt(`${state.input}${newVal}`, 10) }));
-    } else if (newVal === '÷') {
-      // this.setState((state) => ({ memory1: state.input}));
-      console.log(input, memory1);
-      this.setState((state) => ({ memory1: parseInt(`${state.input}`, 10) }));
+  updateCalc(btnVal) {
+    if (btnVal === 'A/C') {
+      this.setState(() => ({ total: 0, operation: null, next: 0 }));
     }
+    this.setState((state) => calculate(state, btnVal));
   }
 
   render() {
-    const { input } = this.state;
+    const { total, operation, next } = this.state;
     return (
       <ul className="container">
         <li className="firstRow">
           {' '}
-          <p>{input}</p>
+          <p>
+            {operation}
+            {' '}
+            {next}
+          </p>
+          <p className="result">{total}</p>
         </li>
         <li className="secondRow">
           <Button text="A/C" updateCalc={this.updateCalc} />

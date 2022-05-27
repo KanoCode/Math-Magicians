@@ -4,6 +4,7 @@
   height: 44vh;
   list-style: none;
   padding: 0;
+
 }
 
 .firstRow {
@@ -12,4 +13,14 @@
   text-align:end;
   height: 20%;
   display: flex;
+  position: relative;
+}
+
+.result{
+
+position: absolute;
+height: 30%;
+margin-bottom: 0;
+right: 0;
+bottom:0;
 }
