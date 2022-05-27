@@ -16,9 +16,6 @@ class Calculator extends React.Component {
   }
 
   updateCalc(btnVal) {
-    if (btnVal === 'A/C') {
-      this.setState(() => ({ total: 0, operation: null, next: 0 }));
-    }
     this.setState((state) => calculate(state, btnVal));
   }
 
@@ -29,11 +26,11 @@ class Calculator extends React.Component {
         <li className="firstRow">
           {' '}
           <p>
-            {operation}
+            {operation === 'AC' ? null : operation}
             {' '}
             {next}
           </p>
-          <p className="result">{total}</p>
+          <p className="result">{operation === 'A/C' ? 0 : total}</p>
         </li>
         <li className="secondRow">
           <Button text="A/C" updateCalc={this.updateCalc} />
