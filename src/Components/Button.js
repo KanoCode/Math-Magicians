@@ -5,26 +5,27 @@ import './Button.css';
 class Button extends React.Component {
   constructor(props) {
     super(props);
-    this.value = this.props;
-    this.position = this.props;
+    this.state = {};
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(event) {
+    const { updateCalc } = this.props;
+    updateCalc(event.target.outerText);
   }
 
   render() {
-    const { value } = this.props;
-    const { className } = this.props;
-    const { type } = this.props;
+    const { text } = this.props;
     return (
-      <>
-        <input type={type} value={type === 'text' ? null : value} className={className} />
-      </>
+      <button onClick={this.handleClick} type="button">
+        {text}
+      </button>
     );
   }
 }
-
 Button.propTypes = {
-  value: PropTypes.string.isRequired,
-  className: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
+  updateCalc: PropTypes.func.isRequired,
+  text: PropTypes.string.isRequired,
 };
 
 export default Button;
