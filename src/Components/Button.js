@@ -12,8 +12,6 @@ class Button extends React.Component {
   handleClick(event) {
     const { updateCalc } = this.props;
     updateCalc(event.target.outerText);
-    // const convertToNum = parseInt(event.target.outerText, 10);
-    // console.log(convertToNum);
   }
 
   render() {

@@ -26,11 +26,11 @@ class Calculator extends React.Component {
         <li className="firstRow">
           {' '}
           <p>
-            {operation === 'AC' ? null : operation}
+            {operation === 'A/C' ? null : operation}
             {' '}
             {next}
           </p>
-          <p className="result">{operation === 'A/C' ? 0 : total}</p>
+          <p className="result">{total === null ? 0 : total}</p>
         </li>
         <li className="secondRow">
           <Button text="A/C" updateCalc={this.updateCalc} />

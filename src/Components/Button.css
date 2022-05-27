@@ -4,12 +4,15 @@ button {
   background-color: #e0e0e0;
   height: 40px;
 }
+
 button:nth-child(4) {
   background-color: #f5913e;
 }
-.lastRow button:nth-child(1){
+
+.lastRow button:nth-child(1) {
   width: 50%;
 }
-.lastRow button:nth-child(3){
+
+.lastRow button:nth-child(3) {
   background-color: #f5913e;
 }
