@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Button.css';
 
-function Button(props) {
+const Button = (props) => {
   const handleClick = (event) => {
     const { updateCalc } = props;
     updateCalc(event.target.outerText);
@@ -14,7 +14,7 @@ function Button(props) {
       {text}
     </button>
   );
-}
+};
 Button.propTypes = {
   updateCalc: PropTypes.func.isRequired,
   text: PropTypes.string.isRequired,

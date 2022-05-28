@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Button from './Button';
 import calculate from './logic/calculate';
 
-function Calculator() {
+const Calculator = () => {
   const [Data, setData] = useState({ total: 0, next: null, operation: null });
   const updateCalc = (btnVal) => {
     const { total, operation, next } = calculate(Data, btnVal);
@@ -54,6 +54,6 @@ function Calculator() {
       </li>
     </ul>
   );
-}
+};
 
 export default Calculator;
