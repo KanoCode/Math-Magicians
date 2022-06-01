@@ -1,36 +1,43 @@
 import React from 'react';
 import styled from 'styled-components';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const StyledNav = styled.nav`
   height: 60px;
-  width: 100%;
+  width: 90%;
   position: relative;
   display: flex;
-  justify-content:space-between;
-  border: solid 2px green;
-  div{
-      background:pink;
-      width:60%;
-      display:flex;
-      justify-content:space-evenly;
-      align-items:center;
+  margin: auto;
+  justify-content: space-between;
+  div {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
   }
-  button {
-  
-    cursor:pointer;
+  a {
+    width: 20%;
+    text-align: center;
+    font-size: 20px;
+    height: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    background: linear-gradient(45deg, #e6e6e6, #ffffff);
   }
 `;
 const NavBar = () => (
-  <StyledNav>
-    <h1>𝘔𝘢𝘵𝘩 𝘔𝘢𝘨𝘪𝘤𝘪𝘢𝘯𝘴</h1>
-    <div>
-      {' '}
-      <button type="button">Home</button>
-      {/* <Link to="/pagesinvoices">Calculator</Link>
-      <Link to="/pagesinvoices">Quote</Link> */}
-    </div>
-  </StyledNav>
+  <>
+    {' '}
+    <StyledNav>
+      <h1>𝘔𝘢𝘵𝘩 𝘔𝘢𝘨𝘪𝘤𝘪𝘢𝘯𝘴</h1>
+      <div>
+        {' '}
+        <Link to="/Home">Home</Link>
+        <Link to="/calculator">Calculator</Link>
+        <Link to="/quote">Quote</Link>
+      </div>
+    </StyledNav>
+  </>
 );
 
 export default NavBar;
