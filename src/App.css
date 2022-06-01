@@ -13,7 +13,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-self: center0;
+  align-self: center;
   list-style: none;
   padding: 0;
 }
@@ -21,7 +21,7 @@
 .firstRow {
   width: 98%;
   margin: 1%;
-  background-color: #ffffff;
+  background-color: #fff;
   text-align: end;
   height: 110px;
   display: flex;
@@ -47,6 +47,17 @@ li {
   justify-content: space-between;
 }
 
-section,main{
+section,
+main {
   padding: 14%;
+}
+
+.calculator-css {
+  width: 60%;
+  padding-top: 4%;
+  margin: 0 auto;
+}
+
+.calculator-css h2 {
+  width: 40%;
 }

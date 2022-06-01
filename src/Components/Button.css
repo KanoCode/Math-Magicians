@@ -6,15 +6,16 @@
   height: 50px;
   cursor: pointer;
   border-radius: 18px;
-  background: linear-gradient(45deg, #e6e6e6, #ffffff);
-}
-button:hover {
-  box-shadow: 11px -11px 22px #d6d6d6, -11px 11px 22px #ffffff;
+  background: linear-gradient(45deg, #e6e6e6, #fff);
 }
 
+button:hover {
+  box-shadow: 11px -11px 22px #d6d6d6, -11px 11px 22px #fff;
+}
+
+.secondRow button,
 button:nth-child(4),
-.lastRow button:nth-child(3),
-.secondRow button {
+.lastRow button:nth-child(3) {
   background: linear-gradient(45deg, #111, #111);
   color: whitesmoke;
 }
