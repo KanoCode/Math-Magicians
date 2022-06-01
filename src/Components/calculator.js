@@ -1,4 +1,3 @@
-import './calculator.css';
 import React, { useState } from 'react';
 import Button from './Button';
 import calculate from './logic/calculate';
@@ -12,8 +11,8 @@ const Calculator = () => {
   const { total, operation, next } = Data;
 
   return (
-
     <ul className="container">
+      <li id="logo">𝓜𝓪𝓽𝓱 𝓜𝓪𝓰𝓲𝓬</li>
       <li className="firstRow">
         {' '}
         <p>
@@ -23,7 +22,7 @@ const Calculator = () => {
         </p>
         <p className="result">{total === null ? 0 : total}</p>
       </li>
-      <li className="secondRow">
+      <li className="secondRow ">
         <Button text="A/C" updateCalc={updateCalc} />
         <Button text="+/-" updateCalc={updateCalc} />
         <Button text="%" updateCalc={updateCalc} />

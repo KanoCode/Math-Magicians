@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Calculator from './Components/calculator';
 import NavBar from './Components/Navbar';
+import './App.css';
 
 class App extends Component {
   constructor(props) {
@@ -12,7 +13,9 @@ class App extends Component {
     return (
       <>
         <NavBar />
-        <Calculator />
+        <div className="calc-wrap">
+          <Calculator />
+        </div>
       </>
     );
   }
