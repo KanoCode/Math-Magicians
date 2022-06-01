@@ -1,6 +1,6 @@
-import './App.css';
 import React, { Component } from 'react';
 import Calculator from './Components/calculator';
+import NavBar from './Components/Navbar';
 
 class App extends Component {
   constructor(props) {
@@ -11,7 +11,8 @@ class App extends Component {
   render() {
     return (
       <>
-        <Calculator name="Mavericks" />
+        <NavBar />
+        <Calculator />
       </>
     );
   }
