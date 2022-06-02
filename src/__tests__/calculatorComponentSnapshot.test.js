@@ -1,7 +1,6 @@
-import renderer from "react-test-renderer";
-import calculator from "../Components/calculator";
+import renderer from 'react-test-renderer';
 
-it("renders correctly", () => {
+it('renders correctly', () => {
   const tree = renderer.create(<calculator />).toJSON();
   expect(tree).toMatchSnapshot();
 });
