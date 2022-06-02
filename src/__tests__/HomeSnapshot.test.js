@@ -4,9 +4,11 @@ import Home from '../Components/pages/Home';
 
 it('renders correctly', () => {
   const tree = renderer
-    .create(<BrowserRouter>
-      <Home />
-    </BrowserRouter>)
+    .create(
+      <BrowserRouter>
+        <Home />
+      </BrowserRouter>,
+    )
     .toJSON();
   expect(tree).toMatchSnapshot();
 });

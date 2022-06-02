@@ -4,9 +4,11 @@ import App from '../App';
 
 it('renders correctly', () => {
   const tree = renderer
-    .create(<BrowserRouter>
-      <App />
-    </BrowserRouter>)
+    .create(
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>,
+    )
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
