@@ -37,7 +37,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - ### Netlify
 
-  - [view it on netlify here](https://629a1aebc6a4540686f9fa18--boisterous-chimera-2fdfd3.netlify.app/)
+  - [view it on netlify here](https://boisterous-chimera-2fdfd3.netlify.app/)
 
 - ### Heroku
   - [See it on Heroku here](https://kano-z-math-magicians-app.herokuapp.com/)
