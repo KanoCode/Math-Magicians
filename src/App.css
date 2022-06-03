@@ -2,22 +2,18 @@
   width: 314px;
   border-radius: 12px;
   background: #e0e0e0;
-  /* border-radius: 39px; */
-  /* box-shadow: 27px 27px 54px #babab7, -27px -27px 54px #fffffd; */
   padding: 1%;
   box-shadow: -10px -10px 66px #a3a2a0, 10px 10px 56px #dddcd8;
 }
 
 .container {
   width: 100%;
-  /* margin: 6% auto; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-self: center;
   list-style: none;
   padding: 0;
-  /* border: solid; */
 }
 
 .firstRow {
@@ -29,8 +25,6 @@
   display: flex;
   position: relative;
   margin-bottom: 3%;
-  border-radius: 39px;
-  /* background: linear-gradient(225deg, #adaca9, #cdccc9); */
   box-shadow: -20px 20px 66px #a3a2a0, 20px -20px 66px #dddcd8;
   border-radius: 12px;
 }
