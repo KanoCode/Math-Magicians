@@ -9,6 +9,7 @@
 - [Overview](#overview)
   - [Built with](#built-with)
   - [Live demo](#live-demo)
+  - [Screenshot](#Screenshot)
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -32,6 +33,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Js
 - CSS
 - Create-react-app
+
+## Screenshot
+![all-devices-black](https://user-images.githubusercontent.com/95347844/172074162-11fadbce-a334-43ff-8d87-784fe19b26cd.png)
 
 ## Live demo
 
