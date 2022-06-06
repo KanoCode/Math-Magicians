@@ -43,7 +43,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
   - [view it on netlify here](https://boisterous-chimera-2fdfd3.netlify.app/)
 
-- ### Heroku
+<!-- - ### Heroku -->
 
 
 ## Getting Started
